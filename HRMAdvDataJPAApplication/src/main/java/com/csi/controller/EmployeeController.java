@@ -1,7 +1,3 @@
-# AdvHRMJpaApplication
-Building Employee's Data with Rest API's Tested On Swagger UI As Well As Postman API
-
-
 package com.csi.controller;
 
 import com.csi.exception.RecordNotFoundException;
@@ -171,4 +167,3 @@ public class EmployeeController {
         return ResponseEntity.ok("DATA DELETED SUCCESSFULLY");
     }
 }
-

@@ -1,0 +1,17 @@
+package com.csi.repo;
+
+import com.csi.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+
+    public Employee findByEmpEmailId(String empEmailId);
+
+    public Employee findByEmpPhoneNum(long empPhoneNum);
+
+    public List<Employee> findByEmpName(String name);
+}
